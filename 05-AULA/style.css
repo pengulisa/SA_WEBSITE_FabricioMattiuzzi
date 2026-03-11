@@ -1,0 +1,52 @@
+h1{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+#caixa-cinza{
+    background-color: rgb(210, 209, 209);
+    padding: 50px;
+}
+#caixinha-verde1{
+    background-color: green;
+    border: 3px solid black;
+    margin: -20px;
+}
+#caixa-vermelha{
+    background-color: red;
+    padding: 50px;
+    ;
+}
+h2{
+   
+    text-align: center;}
+
+    h3{
+   
+    text-align: center;}
+#caixinha-verde2{
+    background-color: green;
+    border: 3px solid black;
+        margin: -20px;
+
+    
+   
+}
+#caixa-vermelha2{
+    background-color: red;
+    padding: 50px;
+    ;
+}
+
+#rodape{
+    background-color: rgba(127, 125, 125, 0.763);
+    padding: 50px;
+}
+
+h5{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+}
+

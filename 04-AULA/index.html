@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formuláios </title>
+</head>
+<body>
+    <h1> Formulários </h1>
+
+    
+    <!--<input type="text"> -->
+
+    
+    
+    <form>
+        <!--label = texto pra guiar o input-->
+        <!--for = diz pra qual input o label se refere-->
+        <label for="caixa-nome">Nome</label>
+
+        <!--id = identificador único do input-->
+        <!--name = nome do input (usado para identificar o campo no servidor)-->
+        <input type="text" 
+        id="caixa-nome" 
+        name="caixa-nome"
+        placeholder="Digite seu nome">
+        <br>
+        <br>
+        <!--input dentro do label-->
+        <label></label>
+            Email:
+            <input type="email"
+             name="caixa-email" 
+             id="caixa-email" 
+            placeholder="email@email.com">
+        </label>
+        <br>
+        <br>
+
+        <!-- Caixinha de senha -->
+         <label for="caixa-senha">Senha</label>
+         <input type="password" 
+         id="caixa-senha" 
+         name="caixa-senha"
+         placeholder="Digite sua senha"
+         />
+         <br>
+         <br>
+            <!-- Botão de envio -->
+            <button type="submit" name="botao-login" id="botao-login" value="Login"></button>
+    </form>
+    <br>
+    <br>
+    <label for="input-data">Data
+        <input type="date" name="input-data" id="input-data">
+
+        <input type="datetime-local" name="" id="">
+        <input type="time" name="" id="">
+        
+
+        <input type="tel" 
+        pattern="[0-9]{3}--[0-9]{5}--[0-9]{4}"
+        placeholder="(021) 99999-9999"
+        />
+    </label>
+</body>
+</html>

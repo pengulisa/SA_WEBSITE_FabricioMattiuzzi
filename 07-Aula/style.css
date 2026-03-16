@@ -1,0 +1,109 @@
+/* Seleciona todos os elementos do site */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Seleciona por tag, nesse casp a tag body  */
+body{
+    background-color: rgb(6, 165, 165);
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+}
+
+/* Seleciona por id  */
+#topo{
+    background-color: rgb(0, 238, 255);
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Seleciona por classe  */
+.descricao{
+    font-style: italic;
+}
+
+/* Estiliza os elementos com a class bloco  */
+.bloco{
+    background-color: rgb(5, 20, 218);
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.destaque{
+    background-color: rgb(48, 14, 172);
+}
+
+.texto-destaque{
+    font-weight: bold;
+    color: darkblue;
+}
+
+/* Estiliza o elemento com id caixa-unica */
+#caixa-unica{
+    background-color: #ede9fe;
+    padding: 10px;
+    border: 2px solid rgb(1, 165, 157);
+}
+
+/* seleciona todo o p que estejja dentro de uma div */
+#div p{
+    color: rgb(0, 255, 170);
+}
+
+.pai-direto > p{
+    color:rgb(6, 165, 165);
+    padding: 5px;
+}
+
+/* selecionar o p que vem logo após um h3 */
+h3 + p{
+    color: rgb(51, 19, 167);
+}
+
+h4 ~ p{
+    background-color: rgb(248, 170, 1);
+    color: rgb(0, 94, 202);
+}
+
+input[type="text"]{
+    border: 2px solid orange;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+a[href="https://www.google.com"]{
+    color: red;
+    font-weight: 50px;
+ }
+
+ h5, h6{
+    color : rgb(0, 255, 170);
+    margin: 5px 0px;
+    font-size: 50px;
+ }
+
+ .botao.ativo{
+    color: tomato;
+    padding: 50px;
+ }
+
+ p.aviso{
+    color: sandybrown;
+ }
+
+
+ div#painel{
+    background-color: sandybrown;
+    padding: 10px;
+ }
+
+ #menu ul li a{
+    color: cornflowerblue;
+    text-decoration: none;
+    list-style-type: none;
+ }

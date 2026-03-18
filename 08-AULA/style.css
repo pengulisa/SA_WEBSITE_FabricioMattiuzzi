@@ -1,0 +1,146 @@
+/* IMPORTAÇÃO DE FONTE   */
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@0;1&display=swap');
+
+@font-face{
+    src: url("./fonts/Playwrite.ttf");
+    font-family: 'Playwrite';
+}
+h2{
+    font-family: 'Playwrite';
+}
+
+h1 {
+  font-family: 'Alumni Sans Inline One', sans-serif;
+  font-weight: 400 ;
+  font-style: normal;
+}
+
+/* Estilizaei por tag  */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: black;
+}
+/* Estilizei dois elementos ao mesmo tempo  */
+h1,
+h2 {
+  color: #1f3c88;
+}
+
+/* Seletor de classe  */
+.bloco {
+  background-color: white;
+  border: 2px solid gray;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* PSEUDO CLASSE  */
+a {
+  color: orange;
+}
+/* Estiliza links que ainda não foram visitados  */
+a:link {
+  color: red;
+}
+/* |Estiliza links que foram visitados  */
+a:visited {
+  color: rgb(30, 255, 0);
+}
+/* EStiliza links quando o mouse passa por cima  */
+a:hover {
+  color: aqua;
+  font-size: 20px;
+  text-decoration: none;
+}
+/* Estiliza links quando estão sendo clicados  */
+a:active {
+  color: green;
+}
+/* Estiliza o botão   */
+button:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+button:active {
+  transform: scaleX(1.5);
+  transform: scaleY(1.7);
+}
+/* Estiliza o input quando ele estiver em foco   */
+input:focus {
+  outline: none;
+  border: 2px solid yellow;
+  background-color: azure;
+}
+/* Estiliza o input quando ele for obrigatório   */
+input:required {
+  border: 2px solid red;
+}
+/* Estiliza o input quando ele for válido    */
+input:valid {
+  border: 2px solid rgb(38, 222, 255);
+  /* Estiliza o input quando ele for inválido */
+}
+input:invalid {
+  border: 2px solid rgb(195, 0, 255);
+}
+/* Estiliza o input quando ele estiver marcado    */
+input:checked {
+  accent-color: black;
+}
+/* Estiliza o input quando ele estiver desabilitado    */
+input:disabled {
+  background-color: crimson;
+  color: #6b7280;
+}
+/* Estiliza o primeiro item da lista   */
+.lista-exemplo li:first-child {
+  font-weight: bold;
+  color: gold;
+}
+/* Estiliza o último item da lista   */
+.lista-exemplo li:last-child {
+  color: red;
+}
+.lista-exemplo li:nth-child(3) {
+  background-color: #fef3c7;
+}
+/* selecionar elementos sem conteúdo   */
+.caixa-vazia:empty {
+  width: 200px;
+  height: 60px;
+  background-color: #fef2f2;
+  border: 2px solid red;
+}
+
+/* PSEUDO ELEMENTOS  */
+/* Insere um conteúdo antes do elemento h2  */
+h2::before{
+    content: "🌟";
+    color: #fef3c7;
+}
+/* Insere um conteúdo depois do elemento h2  */
+h2::after{
+    content: "👍";
+    color: #0064fa;
+}
+/* Estiliza o placeholder do input   */
+input::placeholder {
+  color: #6b7280;
+  font-style: italic;
+}
+/* Estiliza a primeira letra de cada parágrafo    */
+::selection{
+    background-color: yellow;
+    color: green;
+    font-size: bold;
+
+}
+
+.lista-maker li::marker{
+    color: red;
+    font-size: 20px;
+}

@@ -1,0 +1,57 @@
+body{
+    background-color: violet;
+    color: white;
+    text-align: center;
+}
+
+#bloco{
+    background-color: black;
+    display: block;
+}
+
+
+#quad1{
+background-color: red;
+}
+
+#quad2{
+    background-color: yellow;
+    /* float: left; */
+}
+
+#quad3{
+    background-color: green;
+}
+
+#bloco-linha{
+    background-color: blue;
+    
+}
+
+#linha{
+    background-color: orange ;
+    
+}
+
+#flex{
+    background-color: rgb(26, 255, 228);
+    display: flex;
+    height: 500px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: column nowrap;
+     gap: 10px;
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.quad{
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px black;
+    display: inline-block;
+   
+}

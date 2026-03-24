@@ -1,0 +1,17 @@
+body{
+    background-color: azure;
+    text-align: center;
+}
+
+.icones{
+    color: red;
+    font-size: 120px;
+    padding: 2px;
+}
+
+.icones:hover{
+    color: white;
+    background-color: red;
+    padding: 2px;
+    cursor: pointer;
+}

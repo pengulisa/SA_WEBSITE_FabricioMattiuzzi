@@ -1,0 +1,321 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* PERSONALIZAÇÃO */
+
+/* Header */
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #f4f6fb;
+    color: black;
+    line-height: 1.6;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* Topo */
+.topo{
+    background-color: #0f172a;
+    position: sticky; /* fica onde você quiser */
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.navegacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    min-height: 85px;
+}
+.logo{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 14px;
+}
+.menu a{
+    color: white;
+    font-weight: 700;
+    padding: 10px 15px;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.menu a:hover{
+    background-color: #1e293b;
+    border: #f4f6fb 1px solid;
+}
+
+/* Main */
+#inicio{
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+.etiqueta-linha{
+    display: inline;
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    padding: 5px 10px;
+    border-radius: 10%;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.destaque-inline{
+    display: inline;
+    color: red;
+    font-weight: 700;
+}
+.idol{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 35px;
+    align-items: center;
+    padding: 50px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+.idol-txt h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #1e293b;
+    margin: 20px 0;
+}
+.idol-txt p{
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin-bottom: 25px;
+}
+.idol-img img{
+    width: 100%; height: 530px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 15px 40px black;
+    align-items: center;
+}
+/* Botões - Inline-block */
+.idol-acoes{
+    font-size: 1.5rem;
+    gap: 20px;
+    margin-top: 10px;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 10%;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.btn-primary{
+    background-color: red;
+    color: white;
+}
+.btn-secondary{
+    background-color: #e5e7eb;
+    color: black;
+}
+.secao{
+    padding: 30px 0 50px 0;
+}
+.titulo-secao{
+    margin-bottom: 25px;
+}
+.titulo-secao h2{
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 8px;
+}
+.titulo-secao p{
+    font-size: 1.2rem;
+    color: #4b5563;
+}
+/* Block */
+.bloco-historia{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px lightgray;
+}
+.caixa-block{
+    background: linear-gradient(135deg, #5ec4d1, #7945be);
+    color: #ebebeb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+/* Inline e Inline-block */
+.linha-ex, .linha-cards-inlineblock{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 2px 30px black;
+}
+.linha-ex{
+    margin-bottom: 20px;
+}
+.texto-ex{
+    font-size: 1rem;
+}
+.item-inline{
+    display: inline;
+    background-color: #fdbbbb;
+    color: #dc2626;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-left: 8px;
+    font-weight: 700;
+}
+/* Cards Azuis */
+.card-inlineblock{
+    display: inline-block;
+    width: 27%;
+    min-height: 190px;
+    margin-right: 2%;
+    background-color: #eff6ff;
+    color: #1e3a8a;
+    border-radius: 15px;
+    padding: 20px;
+}
+.card-inlineblock h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.card-inlineblock p{
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+/* Flex */
+.lista-carreira{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card-carreira{
+    flex: 1 1 260px;
+    background-color: white;
+    color: #1f2937;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px lightgray;
+}
+.card-carreira img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+}
+.card-carreira h3{
+    font-size: 1.3rem;
+    color: #111827;
+    margin-bottom: 10px;
+    padding: 20px 20px 10px;
+}
+.card-carreira p{
+    color: #6b7280;
+    margin-bottom: 10px;
+    padding: 0px 20px 10px;
+}
+.painel-titulos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.item-titulo{
+    background-color: white;
+    color: #3730a3;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 10px 30px lightgray;
+}
+.item-titulo h3{
+    font-size: 1.3rem;
+    color: #b91c1c;
+    margin-bottom: 10px;
+}
+.item-titulo p{
+    font-size: 0.8rem;
+    color: #4b5536;
+}
+
+/* Footer */
+.rodape{
+    margin-top: 50px;
+    background-color: #0f172a;
+    color: white;
+    padding: 45px 0;
+}
+.rodape-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.rodape-grid h3{
+    color: #d1d5db;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* P/ Tablet */
+@media screen and (max-width: 1000px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    .painel-titulos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-inlineblock {
+        width: 48%;
+        margin-right: 2%;
+        margin-bottom: 10px;
+    }
+}
+/* P/ Mobile */
+@media screen and (max-width: 600px) {
+    .navegacao {
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px 0;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .painel-titulos, .rodape-grid {
+        grid-template-columns: 1fr;
+    }
+    .card-inlineblock {
+        display: block;
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .rodape-grid {
+        text-align: center;
+        justify-items: center;
+    }
+}

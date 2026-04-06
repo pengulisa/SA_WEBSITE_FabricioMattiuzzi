@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CR7 Museum</title>
+    <!-- importação Google Icons -->
+    <!-- VEM PRIMEIRO -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <!-- importação do Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- importação do css -->
+    <!-- SEMPRE o css por último -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="topo">
+      <nav class="navegacao container">
+        <div class="logo">
+          <i class="fa-regular fa-futbol"></i>
+          CR7 Museum
+        </div>
+        <ul class="menu">
+          <!-- Opção do menu -->
+          <li>
+            <a href="#inicio">
+              <i class="fa-solid fa-house"> Início </i>
+            </a>
+          </li>
+          <!-- Opção do menu 2 -->
+          <li>
+            <a href="#historia">
+              <i class="fa-solid fa-circle-info"> História </i>
+            </a>
+          </li>
+          <!-- Opção do menu 3 -->
+          <li>
+            <a href="#carreira">
+              <i class="fa-solid fa-briefcase"> Carreira </i>
+            </a>
+          </li>
+          <li>
+            <!-- Opção do menu 4 -->
+            <a href="#titulos">
+              <i class="fa-solid fa-trophy"> Títulos </i>
+            </a>
+          </li>
+          <!-- Opção do menu 5 -->
+          <li>
+            <a href="#galeria">
+              <i class="fa-solid fa-photo-film"> Galeria </i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- Primeira seção - grid -->
+      <section id="inicio" class="container idol">
+        <!-- Parte textual -->
+        <div class="idol-txt">
+          <!-- Tags visuais -->
+          <span class="etiqueta-linha">O Milior!!</span>
+          <span class="etiqueta-linha">Portugal</span>
+          <span class="etiqueta-linha">Uma besta enjaulada, com ódio</span>
+          <!-- Título -->
+          <h1>
+            Cristiano Ronaldo: história, carreira, títulos e legado no futebol
+          </h1>
+          <!-- Texto -->
+          <p>
+            Uma página dedicada ao ídolo de todos, Cristiano Ronaldo, utilizando
+            todos os ipos de <span class="destaque-inline">display</span> para
+            os alunos consultarem depois
+          </p>
+        </div>
+        <!-- Parte imagem -->
+        <div class="idol-img">
+          <img
+            src="https://www.infomoney.com.br/wp-content/uploads/2025/06/2025-06-04T193907Z_100308004_UP1EL641IL5KO_RTRMADP_3_SOCCER-UEFANATIONS-GER-POR-REPORT.jpg?fit=1280%2C925&quality=50&strip=all"
+            alt="O Milior!!"
+          />
+        </div>
+        <!-- Ações com botões -->
+        <div class="idol-acoes">
+          <a href="#carreira" class="btn btn-primary">Ver Carreira</a>
+          <a href="#titulos" class="btn btn-secondary">Ver Títulos</a>
+        </div>
+      </section>
+      <!-- Fim da primeira seção - Grid -->
+      <!--  -->
+      <!-- Segunda seção - Block-->
+      <section id="historia" class="container secao">
+        <!-- div pro título e descrição -->
+        <div class="titulo-secao">
+          <h2>História</h2>
+          <p>
+            Exemplo de uso do <strong>display: block</strong> em caixas de
+            conteúdo organizado uma abaixo da outra
+          </p>
+        </div>
+        <!-- div p/ mostrar o tipo de display -->
+        <div class="bloco-historia">
+          <div class="caixa-block">
+            <h2>Título 1</h2>
+            <p>Descrição da história 1</p>
+          </div>
+          <div class="caixa-block">
+            <h2>Título 2</h2>
+            <p>Descrição da história 2</p>
+          </div>
+          <div class="caixa-block">
+            <h2>Título 3</h2>
+            <p>Descrição da história 3</p>
+          </div>
+        </div>
+      </section>
+      <!-- Fim segunda seção - block -->
+      <!--  -->
+      <!-- Terceira seção - Inline e Inline-block -->
+      <section class="container secao">
+        <div class="titulo-secao">
+          <h2>Informações Rápidas</h2>
+          <p>
+            Exemplos de <strong>display: inline</strong> e
+            <strong>display: inline-block</strong>
+          </p>
+        </div>
+        <div class="linha-ex">
+          <p class="texto-ex">
+            Dados em destaque:
+            <span class="item-inline">Portugal</span>
+            <span class="item-inline">O milior</span>
+            <span class="item-inline">Robozão</span>
+            <span class="item-inline">SIIIIIIIIIIIIUUUUUU</span>
+          </p>
+        </div>
+        <br />
+        <div class="linha-cards-inlineblock">
+          <div class="card-inlineblock">
+            <h3>Origem</h3>
+            <p>Informação do card 1</p>
+          </div>
+          <div class="card-inlineblock">
+            <h3>Perfil</h3>
+            <p>Informação do card 2</p>
+          </div>
+          <div class="card-inlineblock">
+            <h3>Marca</h3>
+            <p>Informação do card 3</p>
+          </div>
+        </div>
+      </section>
+      <!-- Fim da Terceira Seção -->
+      <!--  -->
+      <!-- Quarta seção - Flex -->
+      <section id="carreira" class="container secao">
+        <div class="titulo-secao">
+          <h2>Carreira</h2>
+          <p>
+            Exemplo de uso do <strong>display: flex</strong> c/ cards internos
+          </p>
+        </div>
+        <div class="lista-carreira">
+          <!-- Card 1 -->
+          <article class="card-carreira">
+            <img
+              src="https://www.infomoney.com.br/wp-content/uploads/2025/06/2025-06-04T193907Z_100308004_UP1EL641IL5KO_RTRMADP_3_SOCCER-UEFANATIONS-GER-POR-REPORT.jpg?fit=1280%2C925&quality=50&strip=all"
+              alt=""
+            />
+            <h3>Título 1</h3>
+            <p>Conteúdo do card</p>
+          </article>
+          <!-- Card 2 -->
+          <article class="card-carreira">
+            <img
+              src="https://www.infomoney.com.br/wp-content/uploads/2025/06/2025-06-04T193907Z_100308004_UP1EL641IL5KO_RTRMADP_3_SOCCER-UEFANATIONS-GER-POR-REPORT.jpg?fit=1280%2C925&quality=50&strip=all"
+              alt=""
+            />
+            <h3>Título 2</h3>
+            <p>Conteúdo do card</p>
+          </article>
+          <!-- Card 3 -->
+          <article class="card-carreira">
+            <img
+              src="https://www.infomoney.com.br/wp-content/uploads/2025/06/2025-06-04T193907Z_100308004_UP1EL641IL5KO_RTRMADP_3_SOCCER-UEFANATIONS-GER-POR-REPORT.jpg?fit=1280%2C925&quality=50&strip=all"
+              alt=""
+            />
+            <h3>Título 3</h3>
+            <p>Conteúdo do card</p>
+          </article>
+          <!-- Card 4 -->
+          <article class="card-carreira">
+            <img
+              src="https://www.infomoney.com.br/wp-content/uploads/2025/06/2025-06-04T193907Z_100308004_UP1EL641IL5KO_RTRMADP_3_SOCCER-UEFANATIONS-GER-POR-REPORT.jpg?fit=1280%2C925&quality=50&strip=all"
+              alt=""
+            />
+            <h3>Título 4</h3>
+            <p>Conteúdo do card</p>
+          </article>
+        </div>
+      </section>
+      <!-- Fim da Quarta Seção -->
+      <!--  -->
+      <!-- Quinta Seção - Grid -->
+      <section id="titulos" class="container secao">
+        <div class="titulo-secao">
+          <h2>Títulos</h2>
+          <p>
+            Exemplo de uso do <strong>display: grid</strong> com cards
+            ajustáveis
+          </p>
+        </div>
+        <div class="painel-titulos">
+          <!-- Um Card -->
+          <div class="item-titulo">
+            <h3>1</h3>
+            <p>De eleitor</p>
+          </div>
+          <div class="item-titulo">
+            <h3>2</h3>
+            <p>De eleitor</p>
+          </div>
+          <div class="item-titulo">
+            <h3>3</h3>
+            <p>De eleitor</p>
+          </div>
+          <div class="item-titulo">
+            <h3>4</h3>
+            <p>De eleitor</p>
+          </div>
+          <div class="item-titulo">
+            <h3>5</h3>
+            <p>De eleitor</p>
+          </div>
+          <div class="item-titulo">
+            <h3>6</h3>
+            <p>De eleitor</p>
+          </div>
+          <div class="item-titulo">
+            <h3>7</h3>
+            <p>De eleitor</p>
+          </div>
+          <div class="item-titulo">
+            <h3>8</h3>
+            <p>De eleitor</p>
+          </div>
+        </div>
+      </section>
+      <!-- Fim da Quinta Seção -->
+    </main>
+    <!-- footer -->
+    <footer class="rodape">
+      <!-- Grid com 3 Colunas -->
+      <div class="container rodape-grid">
+        <div>
+          <h3>História</h3>
+          <p>Infância na Ilha</p>
+          <p>Formação no Sporting</p>
+          <p>Ascensão Internacional</p>
+        </div>
+        <div>
+          <h3>Carreira</h3>
+          <p>Manchester United</p>
+          <p>Real Madrid</p>
+          <p>Portugal</p>
+        </div>
+        <div>
+          <h3>Legado</h3>
+          <p>Títulos Internacionais</p>
+          <p>Prêmios Individuais</p>
+          <p>Recordes Históricos</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
